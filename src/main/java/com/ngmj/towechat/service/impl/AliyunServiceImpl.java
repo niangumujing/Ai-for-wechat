@@ -136,10 +136,8 @@ public class AliyunServiceImpl implements AiService {
 
                     // 调用AI模型生成回复
                     Flowable<GenerationResult> flowable = gen.streamCall(param);
-
                     // 发送思考中的消息到RabbitMQ
                     rabbitMqTool.sendMessageToRabbitMq(openId, "🤷‍♂️思考信息\n");
-
                     // 流式处理结果
                     flowable.blockingForEach(result -> {
                         // 更新请求上下文中的回复内容

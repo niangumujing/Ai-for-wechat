@@ -1,0 +1,45 @@
+server:
+  port: 80
+log:
+  root:
+    level: info
+logging:
+  level:
+    com.ngmj.towechat.mapper: info
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://mysql:3306/towechat?useSSL=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    initial-size: 5
+    max-active: 20
+    min-idle: 5
+    max-wait: 60000
+  mvc:
+    throw-exception-if-no-handler-found: true
+  data:
+    redis:
+      database: 0
+      host: redis
+      port: 6379
+  rabbitmq:
+    host: rabbitmq
+    port: 5673
+    username: admin
+    password: admin123
+    # 开启消息确认机制（可靠性投递）
+    publisher-confirm-type: correlated
+    publisher-returns: true
+    listener:
+      simple:
+        prefetch: 1
+toWechat:
+  app:
+    appId: wxfd891b75c483e9ff
+    appSecret: b390b2209a3ff10d29f85983629ef0e1
+    encodingAESKey: f6Fn5U8aNTpyCxLPwR753QWy9RfkZCadWB7EvY8pO0W
+    token: niangumujing
+    defaultAPIInfo: AI配置@1@deepseek-r1@sk-1ae0d58b66db49b39139f6551bc5826b
+
