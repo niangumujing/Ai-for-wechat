@@ -3,7 +3,6 @@
 本项目用于AI接入个人公众号(微信公众号不封号,个人账号易封),需要80或443接口暴露到公网供公众号服务器配置识别 (内网穿透,云服务器)
 
 接入效果可关注我的个人公众号:  for you want
-![qrcode_for_gh_fb9ed7dc4a79_258.jpg](images%2Fqrcode_for_gh_fb9ed7dc4a79_258.jpg)
 
 目前只支持阿里云百炼API Key https://www.aliyun.com/product/bailian
 
@@ -26,7 +25,7 @@
 消息存储于系统为每位用户分配mq队列中,上下文存储在redis中
 
 个人微信公众号注册链接:https://mp.weixin.qq.com/
-![Snipaste_2025-02-28_13-36-55.png](images%2FSnipaste_2025-02-28_13-36-55.png)
+
 ### 如何部署?
 
 ###### windows部署 手动部署(不推荐):
@@ -65,15 +64,12 @@ wsl --list --online
 
 `wsl --install -d <DistroName>`
 
-###### 3.安装docker-desktop或docker
-(https://docs.docker.com/desktop/features/wsl/#download)
-
- 新手建议安装(docker-desktop)
+3.安装docker-desktop(https://docs.docker.com/desktop/features/wsl/#download)或docker 新手建议安装(docker-desktop)
 
 ##### 部署:
 
 目录结构:
-![Snipaste_2025-02-28_15-24-57.png](images%2FSnipaste_2025-02-28_15-24-57.png)
+
 ```
 --app(文件夹)
 
@@ -88,6 +84,8 @@ wsl --list --online
 ​	-application.yml(文件)
 
 --docker-compose.yml(文件)
+--mysql(文件夹)
+	-tochat.sql(文件)
 ```
 
 docker-compose.yml文件, dockerfile文件在代码目录中存在
@@ -140,7 +138,7 @@ toWechat:
     defaultAPIInfo: **********(参考格式: AI配置@1@模型名称@APIKey 示例: AI配置@1@deepseek-r1@sk-1ae0d58b66db49b39139f655826b)
 ```
 
-如果出现网络错误,需要的文件可以关注我的个人公众号 for you want 或自行寻找镜像仓库(网络上有教程)
+如果出现网络错误,需要的文件可以关注我的个人公众号 for you want向我提问 或自行寻找镜像仓库(网络上有教程)
 
 在上述文件结构的目录下运行命令:
 
@@ -151,4 +149,4 @@ docker-compose up -d
 
 linux(centos , ubuntu)安装docker(自行网络上寻找教程,或者让AI教你 提示词: 如何在centos , ubuntu 上安装docker)
 
-安装好后使用与上述部署教程一致,服务器上运行与上述过程一致,需要开放443端口; 喜欢的话记得点个赞!!!!
+安装好后使用与上述部署教程一致,服务器上运行与上述过程一致,需要开放443端口;

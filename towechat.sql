@@ -13,7 +13,8 @@
 
  Date: 27/02/2025 15:45:11
 */
-
+create database towechat;
+use towechat;
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
