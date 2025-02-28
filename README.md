@@ -65,7 +65,8 @@ wsl --list --online
 
 `wsl --install -d <DistroName>`
 
-3.安装docker-desktop(https://docs.docker.com/desktop/features/wsl/#download)或docker 新手建议安装(docker-desktop)
+3.安装docker-desktop(https://docs.docker.com/desktop/features/wsl/#download)
+或docker 新手建议安装(docker-desktop)
 
 ##### 部署:
 
