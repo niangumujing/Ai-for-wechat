@@ -37,9 +37,9 @@ spring:
         prefetch: 1
 toWechat:
   app:
-    appId: wxfd891b75c483e9ff
-    appSecret: b390b2209a3ff10d29f85983629ef0e1
-    encodingAESKey: f6Fn5U8aNTpyCxLPwR753QWy9RfkZCadWB7EvY8pO0W
-    token: niangumujing
-    defaultAPIInfo: AI配置@1@deepseek-r1@sk-1ae0d58b66db49b39139f6551bc5826b
+    appId: *******
+    appSecret: *******
+    encodingAESKey: *******
+    token: ******
+    defaultAPIInfo: *******
 
