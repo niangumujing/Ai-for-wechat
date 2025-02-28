@@ -3,6 +3,7 @@
 本项目用于AI接入个人公众号(微信公众号不封号,个人账号易封),需要80或443接口暴露到公网供公众号服务器配置识别 (内网穿透,云服务器)
 
 接入效果可关注我的个人公众号:  for you want
+![qrcode_for_gh_fb9ed7dc4a79_258.jpg](images%2Fqrcode_for_gh_fb9ed7dc4a79_258.jpg)
 
 目前只支持阿里云百炼API Key https://www.aliyun.com/product/bailian
 

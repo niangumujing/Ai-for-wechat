@@ -4636,3 +4636,240 @@ java.lang.NullPointerException: Cannot invoke "com.ngmj.towechat.service.AiServi
 
 2025-02-27 10:07:05 [INFO][com.ngmj.towechat.controller.WeChatValidate][receptMeg][62]-> textMessage:TextMessage(toUserName=gh_fb9ed7dc4a79, fromUserName=oqwpT7HilmPM6nbaSdvz79S4WD0g, createTime=1740622024, msgType=text, content=去, msgId=24919714884564746, msgDataId=null, idx=null)
 2025-02-27 10:08:07 [INFO][com.ngmj.towechat.controller.WeChatValidate][receptMeg][62]-> textMessage:TextMessage(toUserName=gh_fb9ed7dc4a79, fromUserName=oqwpT7HilmPM6nbaSdvz79S4WD0g, createTime=1740622086, msgType=text, content=啊, msgId=24919714663505942, msgDataId=null, idx=null)
+2025-02-27 11:05:54 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][138]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-27 11:05:54 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][208]-> Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-02-27 11:05:54 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> No MyBatis mapper was found in '[com.ngmj.towechat.mapper]' package. Please check your configuration.
+2025-02-27 11:05:54 [INFO][com.ngmj.towechat.Task.AccessTokenTask][getAccessToken][28]-> access_token: 89_zYgK8lSvV6qvfhvb1WhGr3Y8qMyws2AUQFXRbsg3oXOxk9WsTuB_wW8y9niz34WHCJLdHE9N7l4Ri5ip7HINHsXLvfKd0MwVaPnazK8vtiRnlFfAI1ANxGghs0wNGDhADAHAX
+2025-02-27 12:05:44 [DEBUG][org.springframework.jmx.export.annotation.AnnotationMBeanExporter][registerBeans][541]-> Autodetecting user-defined JMX MBeans
+2025-02-27 12:05:44 [DEBUG][_org.springframework.web.servlet.HandlerMapping.Mappings][detectHandlerMethods][294]-> 
+	c.n.t.c.WeChatValidate:
+	{GET [/wx]}: validate(String,String,String,String)
+	{POST [/wx]}: receptMeg(TextMessage)
+2025-02-27 12:05:44 [DEBUG][org.springframework.beans.factory.support.DefaultListableBeanFactory][getSingleton][225]-> Creating shared instance of singleton bean 'redisTool'
+2025-02-27 12:05:44 [DEBUG][org.springframework.beans.factory.support.DefaultListableBeanFactory][getSingleton][225]-> Creating shared instance of singleton bean 'decrementScript'
+2025-02-27 12:05:44 [DEBUG][org.springframework.beans.factory.support.DefaultListableBeanFactory][createArgumentArray][806]-> Autowiring by type from bean name 'redisTool' via constructor to bean named 'stringRedisTemplate'
+2025-02-27 12:05:44 [DEBUG][org.springframework.beans.factory.support.DefaultListableBeanFactory][createArgumentArray][806]-> Autowiring by type from bean name 'redisTool' via constructor to bean named 'decrementScript'
+2025-02-27 12:05:44 [DEBUG][org.springframework.beans.factory.support.DefaultListableBeanFactory][createArgumentArray][806]-> Autowiring by type from bean name 'redisTool' via constructor to bean named 'redisson'
+2025-02-27 12:05:44 [DEBUG][org.springframework.beans.factory.support.DefaultListableBeanFactory][getSingleton][225]-> Creating shared instance of singleton bean 'feignDecoder'
+2025-02-27 12:05:44 [DEBUG][org.springframework.beans.factory.support.DefaultListableBeanFactory][getSingleton][225]-> Creating shared instance of singleton bean 'feignEncoder'
+2025-02-27 12:05:44 [DEBUG][org.springframework.jmx.export.annotation.AnnotationMBeanExporter][registerBeans][541]-> Autodetecting user-defined JMX MBeans
+2025-02-27 12:05:44 [DEBUG][org.springframework.jmx.export.annotation.AnnotationMBeanExporter][registerBeans][541]-> Autodetecting user-defined JMX MBeans
+2025-02-27 12:05:44 [DEBUG][_org.springframework.web.servlet.HandlerMapping.Mappings][detectHandlerMethods][294]-> 
+	c.n.t.c.WeChatValidate:
+	{GET [/wx]}: validate(String,String,String,String)
+	{POST [/wx]}: receptMeg(TextMessage)
+2025-02-27 12:05:44 [DEBUG][org.springframework.jmx.export.annotation.AnnotationMBeanExporter][registerBeans][541]-> Autodetecting user-defined JMX MBeans
+2025-02-27 12:05:44 [DEBUG][_org.springframework.web.servlet.HandlerMapping.Mappings][detectHandlerMethods][294]-> 
+	c.n.t.c.WeChatValidate:
+	{GET [/wx]}: validate(String,String,String,String)
+	{POST [/wx]}: receptMeg(TextMessage)
+2025-02-27 12:05:44 [DEBUG][org.redisson.command.RedisExecutor][sendCommand][615]-> acquired connection for command (GET) and params [[116, 111, 87, 101, 99, 104, 97, 116, 58, 97, ...]] from slot NodeSource [slot=0, addr=null, redisClient=null, redirect=null, entry=null] using node localhost/127.0.0.1:6379... RedisConnection@354373714 [redisClient=[addr=redis://localhost:6379], channel=[id: 0x22bc8c55, L:/127.0.0.1:60916 - R:localhost/127.0.0.1:6379], currentCommand=null, usage=1]
+2025-02-27 12:05:44 [DEBUG][org.redisson.command.RedisExecutor][releaseConnection][650]-> connection released for command (GET) and params [[116, 111, 87, 101, 99, 104, 97, 116, 58, 97, ...]] from slot NodeSource [slot=0, addr=null, redisClient=null, redirect=null, entry=null] using connection RedisConnection@354373714 [redisClient=[addr=redis://localhost:6379], channel=[id: 0x22bc8c55, L:/127.0.0.1:60916 - R:localhost/127.0.0.1:6379], currentCommand=CommandData [promise=java.util.concurrent.CompletableFuture@758877b[Completed normally], command=(GET), params=[[116, 111, 87, 101, 99, 104, 97, 116, 58, 97, ...]], codec=org.redisson.client.codec.ByteArrayCodec], usage=0]
+2025-02-27 12:06:00 [ERROR][org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler][handleError][95]-> Unexpected error occurred in scheduled task
+feign.RetryableException: Remote host terminated the handshake executing POST https://api.weixin.qq.com/cgi-bin/stable_token
+	at feign.FeignException.errorExecuting(FeignException.java:268)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:131)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:91)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at jdk.proxy2/jdk.proxy2.$Proxy120.getStableAccessToken(Unknown Source)
+	at com.ngmj.towechat.Task.AccessTokenTask.getAccessToken(AccessTokenTask.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake
+	at java.base/sun.security.ssl.SSLSocketImpl.handleEOF(SSLSocketImpl.java:1719)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1518)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1425)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+	at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:589)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:187)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1466)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1437)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:220)
+	at feign.Client$Default.convertAndSend(Client.java:208)
+	at feign.Client$Default.execute(Client.java:105)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:121)
+	... 16 common frames omitted
+Caused by: java.io.EOFException: SSL peer shut down incorrectly
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1510)
+	... 27 common frames omitted
+2025-02-27 13:05:51 [DEBUG][org.redisson.command.RedisExecutor][sendCommand][615]-> acquired connection for command (GET) and params [[116, 111, 87, 101, 99, 104, 97, 116, 58, 97, ...]] from slot NodeSource [slot=0, addr=null, redisClient=null, redirect=null, entry=null] using node localhost/127.0.0.1:6379... RedisConnection@1555653744 [redisClient=[addr=redis://localhost:6379], channel=[id: 0x773d30f6, L:/127.0.0.1:60917 - R:localhost/127.0.0.1:6379], currentCommand=null, usage=1]
+2025-02-27 13:05:51 [DEBUG][org.redisson.command.RedisExecutor][releaseConnection][650]-> connection released for command (GET) and params [[116, 111, 87, 101, 99, 104, 97, 116, 58, 97, ...]] from slot NodeSource [slot=0, addr=null, redisClient=null, redirect=null, entry=null] using connection RedisConnection@1555653744 [redisClient=[addr=redis://localhost:6379], channel=[id: 0x773d30f6, L:/127.0.0.1:60917 - R:localhost/127.0.0.1:6379], currentCommand=CommandData [promise=java.util.concurrent.CompletableFuture@1e5f0b97[Completed normally], command=(GET), params=[[116, 111, 87, 101, 99, 104, 97, 116, 58, 97, ...]], codec=org.redisson.client.codec.ByteArrayCodec], usage=0]
+2025-02-27 13:05:52 [INFO][com.ngmj.towechat.Task.AccessTokenTask][getAccessToken][37]-> access_token: 89_ZvUMjaCqps495cbDU8xYK1oN3WdrX3K06TLcwsuRP57T_eGyHmEMdxHdDbxKEeIWz983K3otpAdo7BAoIJilWJjT30DOj48pR6JSH_4JfpgxVGPGGftqqQskCIACBAgAGALKJ
+2025-02-27 13:05:52 [INFO][com.ngmj.towechat.Task.AccessTokenTask][getAccessToken][38]-> expires_in: 7200
+2025-02-27 13:05:52 [DEBUG][org.redisson.command.RedisExecutor][sendCommand][615]-> acquired connection for command (SETEX) and params [[116, 111, 87, 101, 99, 104, 97, 116, 58, 97, ...], 7200, [56, 57, 95, 90, 118, 85, 77, 106, 97, 67, ...]] from slot NodeSource [slot=0, addr=null, redisClient=null, redirect=null, entry=null] using node localhost/127.0.0.1:6379... RedisConnection@739073160 [redisClient=[addr=redis://localhost:6379], channel=[id: 0x80cf375a, L:/127.0.0.1:60918 - R:localhost/127.0.0.1:6379], currentCommand=null, usage=1]
+2025-02-27 13:05:52 [DEBUG][org.redisson.command.RedisExecutor][releaseConnection][650]-> connection released for command (SETEX) and params [[116, 111, 87, 101, 99, 104, 97, 116, 58, 97, ...], 7200, [56, 57, 95, 90, 118, 85, 77, 106, 97, 67, ...]] from slot NodeSource [slot=0, addr=null, redisClient=null, redirect=null, entry=null] using connection RedisConnection@739073160 [redisClient=[addr=redis://localhost:6379], channel=[id: 0x80cf375a, L:/127.0.0.1:60918 - R:localhost/127.0.0.1:6379], currentCommand=CommandData [promise=java.util.concurrent.CompletableFuture@1d738cd7[Completed normally], command=(SETEX), params=[[116, 111, 87, 101, 99, 104, 97, 116, 58, 97, ...], 7200, [56, 57, 95, 90, 118, 85, 77, 106, 97, 67, ...]], codec=org.redisson.client.codec.StringCodec], usage=0]
+2025-02-27 13:39:52 [DEBUG][org.springframework.boot.availability.ApplicationAvailabilityBean][onApplicationEvent][77]-> Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2025-02-27 13:39:52 [DEBUG][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext][doClose][1031]-> Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36a6bea6, started on Thu Feb 27 10:05:57 CST 2025
+2025-02-27 13:39:52 [DEBUG][org.springframework.context.support.DefaultLifecycleProcessor][stop][365]-> Stopping beans in phase 2147483647
+2025-02-27 13:39:53 [DEBUG][org.springframework.context.support.DefaultLifecycleProcessor][stop][365]-> Stopping beans in phase 2147482623
+2025-02-27 13:39:53 [DEBUG][org.springframework.context.support.DefaultLifecycleProcessor][lambda$doStop$3][238]-> Bean 'webServerGracefulShutdown' completed its stop procedure
+2025-02-27 13:39:53 [DEBUG][org.springframework.context.support.DefaultLifecycleProcessor][stop][365]-> Stopping beans in phase 2147481599
+2025-02-27 13:39:53 [DEBUG][org.springframework.context.support.DefaultLifecycleProcessor][lambda$doStop$3][238]-> Bean 'webServerStartStop' completed its stop procedure
+2025-02-27 13:39:53 [DEBUG][org.springframework.context.support.DefaultLifecycleProcessor][stop][365]-> Stopping beans in phase 0
+2025-02-27 13:39:53 [DEBUG][org.springframework.context.support.DefaultLifecycleProcessor][stop][365]-> Stopping beans in phase -2147483647
+2025-02-27 13:39:53 [DEBUG][org.springframework.context.support.DefaultLifecycleProcessor][lambda$doStop$3][238]-> Bean 'springBootLoggingLifecycle' completed its stop procedure
+2025-02-27 13:39:53 [DEBUG][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][shutdown][218]-> Shutting down ExecutorService 'taskScheduler'
+2025-02-27 13:39:53 [DEBUG][org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter][unregister][115]-> Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Mappings' from the JMX domain
+2025-02-27 13:39:53 [DEBUG][org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter][unregister][115]-> Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Caches' from the JMX domain
+2025-02-27 13:39:53 [DEBUG][org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter][unregister][115]-> Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Env' from the JMX domain
+2025-02-27 13:39:53 [DEBUG][org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter][unregister][115]-> Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Threaddump' from the JMX domain
+2025-02-27 13:39:53 [DEBUG][org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter][unregister][115]-> Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Beans' from the JMX domain
+2025-02-27 13:39:53 [DEBUG][org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter][unregister][115]-> Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Refresh' from the JMX domain
+2025-02-27 13:39:53 [DEBUG][org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter][unregister][115]-> Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Conditions' from the JMX domain
+2025-02-27 13:39:53 [DEBUG][org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter][unregister][115]-> Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Loggers' from the JMX domain
+2025-02-27 13:39:53 [DEBUG][org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter][unregister][115]-> Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Info' from the JMX domain
+2025-02-27 13:39:53 [DEBUG][org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter][unregister][115]-> Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Features' from the JMX domain
+2025-02-27 13:39:53 [DEBUG][org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter][unregister][115]-> Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Health' from the JMX domain
+2025-02-27 13:39:53 [DEBUG][org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter][unregister][115]-> Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Configprops' from the JMX domain
+2025-02-27 13:39:53 [DEBUG][org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter][unregister][115]-> Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Metrics' from the JMX domain
+2025-02-27 13:39:53 [DEBUG][org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter][unregister][115]-> Unregister endpoint with ObjectName 'org.springframework.boot:type=Endpoint,name=Scheduledtasks' from the JMX domain
+2025-02-27 13:39:53 [DEBUG][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor][shutdown][218]-> Shutting down ExecutorService 'applicationTaskExecutor'
+2025-02-27 13:39:53 [DEBUG][org.springframework.jmx.export.annotation.AnnotationMBeanExporter][destroy][452]-> Unregistering JMX-exposed beans on shutdown
+2025-02-27 13:39:53 [DEBUG][org.springframework.jmx.export.annotation.AnnotationMBeanExporter][unregisterBeans][186]-> Unregistering JMX-exposed beans
+2025-02-27 13:39:53 [DEBUG][org.springframework.context.annotation.AnnotationConfigApplicationContext][doClose][1031]-> Closing FeignClientFactory-wechat, started on Thu Feb 27 10:06:02 CST 2025, parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36a6bea6
+2025-02-27 13:39:53 [INFO][com.alibaba.druid.pool.DruidDataSource][close][2207]-> {dataSource-1} closing ...
+2025-02-27 13:39:53 [INFO][com.alibaba.druid.pool.DruidDataSource][close][2280]-> {dataSource-1} closed
+2025-02-27 13:39:53 [DEBUG][org.springframework.amqp.rabbit.connection.CachingConnectionFactory][physicalClose][1292]-> Closing cached Channel: PublisherCallbackChannelImpl: AMQChannel(amqp://guest@127.0.0.1:5673/,1)
+2025-02-27 13:39:53 [DEBUG][org.springframework.amqp.rabbit.connection.PublisherCallbackChannelImpl][close][810]-> Closing AMQChannel(amqp://guest@127.0.0.1:5673/,1)
+2025-02-27 13:39:53 [DEBUG][org.springframework.amqp.rabbit.core.RabbitTemplate][revoke][2694]-> Removed publisher confirm channel: PublisherCallbackChannelImpl: AMQChannel(amqp://guest@127.0.0.1:5673/,1) from map, size now 0
+2025-02-27 13:39:53 [DEBUG][org.springframework.amqp.rabbit.core.RabbitTemplate][revoke][2694]-> Removed publisher confirm channel: PublisherCallbackChannelImpl: AMQChannel(amqp://guest@127.0.0.1:5673/,1) from map, size now 0
+2025-02-27 13:39:53 [DEBUG][org.springframework.amqp.rabbit.connection.PublisherCallbackChannelImpl][generateNacksForPendingAcks][840]-> PendingConfirms cleared
+2025-02-27 13:39:53 [DEBUG][org.springframework.amqp.rabbit.connection.PublisherCallbackChannelImpl][generateNacksForPendingAcks][840]-> PendingConfirms cleared
+2025-02-27 13:39:53 [DEBUG][io.netty.buffer.PoolThreadCache][free][228]-> Freed 19 thread-local buffer(s) from thread: redisson-netty-2-9
+2025-02-27 13:39:53 [DEBUG][io.netty.buffer.PoolThreadCache][free][228]-> Freed 15 thread-local buffer(s) from thread: redisson-netty-2-4
+2025-02-27 13:39:53 [DEBUG][io.netty.buffer.PoolThreadCache][free][228]-> Freed 19 thread-local buffer(s) from thread: redisson-netty-2-11
+2025-02-27 13:39:53 [DEBUG][io.netty.buffer.PoolThreadCache][free][228]-> Freed 19 thread-local buffer(s) from thread: redisson-netty-2-3
+2025-02-27 13:39:53 [DEBUG][io.netty.buffer.PoolThreadCache][free][228]-> Freed 18 thread-local buffer(s) from thread: redisson-netty-2-13
+2025-02-27 13:39:53 [DEBUG][io.netty.buffer.PoolThreadCache][free][228]-> Freed 17 thread-local buffer(s) from thread: redisson-netty-2-19
+2025-02-27 13:39:53 [DEBUG][io.netty.buffer.PoolThreadCache][free][228]-> Freed 17 thread-local buffer(s) from thread: redisson-netty-2-21
+2025-02-27 13:39:53 [DEBUG][io.netty.buffer.PoolThreadCache][free][228]-> Freed 18 thread-local buffer(s) from thread: redisson-netty-2-7
+2025-02-27 13:39:53 [DEBUG][io.netty.buffer.PoolThreadCache][free][228]-> Freed 18 thread-local buffer(s) from thread: redisson-netty-2-29
+2025-02-27 13:39:53 [DEBUG][io.netty.buffer.PoolThreadCache][free][228]-> Freed 18 thread-local buffer(s) from thread: redisson-netty-2-25
+2025-02-27 13:39:53 [DEBUG][io.netty.buffer.PoolThreadCache][free][228]-> Freed 17 thread-local buffer(s) from thread: redisson-netty-2-23
+2025-02-27 13:39:53 [DEBUG][io.netty.buffer.PoolThreadCache][free][228]-> Freed 18 thread-local buffer(s) from thread: redisson-netty-2-27
+2025-02-27 13:39:53 [DEBUG][io.netty.buffer.PoolThreadCache][free][228]-> Freed 17 thread-local buffer(s) from thread: redisson-netty-2-17
+2025-02-27 13:39:53 [DEBUG][io.netty.buffer.PoolThreadCache][free][228]-> Freed 18 thread-local buffer(s) from thread: redisson-netty-2-5
+2025-02-27 13:39:53 [DEBUG][io.netty.buffer.PoolThreadCache][free][228]-> Freed 18 thread-local buffer(s) from thread: redisson-netty-2-32
+2025-02-27 13:39:53 [DEBUG][io.netty.buffer.PoolThreadCache][free][228]-> Freed 19 thread-local buffer(s) from thread: redisson-netty-2-31
+2025-02-27 13:39:53 [DEBUG][io.netty.buffer.PoolThreadCache][free][228]-> Freed 18 thread-local buffer(s) from thread: redisson-netty-2-15
+2025-02-27 14:00:12 [INFO][com.ngmj.towechat.SpringbootApplication][logStarting][51]-> Starting SpringbootApplication using Java 17.0.13 with PID 25156 (D:\ideaproject\to-wechat\target\classes started by Administrator in D:\ideaproject\to-wechat)
+2025-02-27 14:00:12 [INFO][com.ngmj.towechat.SpringbootApplication][logStartupProfileInfo][632]-> No active profile set, falling back to 1 default profile: "default"
+2025-02-27 14:00:13 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][291]-> Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-27 14:00:13 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][138]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-27 14:00:13 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][208]-> Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-02-27 14:00:13 [INFO][org.springframework.cloud.context.scope.GenericScope][setSerializationId][282]-> BeanFactory id=9b3a1f85-de59-3fe6-94d0-95d9659e5ce6
+2025-02-27 14:00:13 [INFO][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker][postProcessAfterInitialization][409]-> Bean 'com.ngmj.towechat.feign.WeChatFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-02-27 14:00:14 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 80 (http)
+2025-02-27 14:00:14 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-80"]
+2025-02-27 14:00:14 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-02-27 14:00:14 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/10.1.7]
+2025-02-27 14:00:14 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-02-27 14:00:14 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][291]-> Root WebApplicationContext: initialization completed in 1817 ms
+2025-02-27 14:00:15 [INFO][org.redisson.Version][logVersion][41]-> Redisson 3.21.0
+2025-02-27 14:00:15 [INFO][org.redisson.connection.pool.MasterPubSubConnectionPool][lambda$createConnection$0][158]-> 1 connections initialized for localhost/127.0.0.1:6379
+2025-02-27 14:00:15 [INFO][org.redisson.connection.pool.MasterConnectionPool][lambda$createConnection$0][158]-> 24 connections initialized for localhost/127.0.0.1:6379
+2025-02-27 14:00:15 [INFO][com.alibaba.druid.spring.boot3.autoconfigure.DruidDataSourceAutoConfigure][dataSource][64]-> Init DruidDataSource
+2025-02-27 14:00:15 [INFO][com.alibaba.druid.pool.DruidDataSource][init][1002]-> {dataSource-1} inited
+2025-02-27 14:00:16 [INFO][org.springframework.amqp.rabbit.connection.CachingConnectionFactory][connectAddresses][630]-> Attempting to connect to: [localhost:5673]
+2025-02-27 14:00:16 [INFO][org.springframework.amqp.rabbit.connection.CachingConnectionFactory][createBareConnection][581]-> Created new connection: rabbitConnectionFactory#28d56028:0/SimpleConnection@598f1faf [delegate=amqp://guest@127.0.0.1:5673/, localPort=56214]
+2025-02-27 14:00:17 [INFO][org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver][<init>][58]-> Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-02-27 14:00:17 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-80"]
+2025-02-27 14:00:17 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 80 (http) with context path ''
+2025-02-27 14:00:17 [INFO][com.ngmj.towechat.SpringbootApplication][logStarted][57]-> Started SpringbootApplication in 5.833 seconds (process running for 6.213)
+2025-02-27 14:00:17 [INFO][com.ngmj.towechat.Task.AccessTokenTask][getAccessToken][28]-> access_token: 89_ZvUMjaCqps495cbDU8xYK1oN3WdrX3K06TLcwsuRP57T_eGyHmEMdxHdDbxKEeIWz983K3otpAdo7BAoIJilWJjT30DOj48pR6JSH_4JfpgxVGPGGftqqQskCIACBAgAGALKJ
+2025-02-27 14:06:05 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-27 14:06:05 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][532]-> Initializing Servlet 'dispatcherServlet'
+2025-02-27 14:06:05 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][554]-> Completed initialization in 2 ms
+2025-02-27 14:09:40 [INFO][com.ngmj.towechat.SpringbootApplication][logStarting][51]-> Starting SpringbootApplication using Java 17.0.13 with PID 31148 (D:\ideaproject\to-wechat\target\classes started by Administrator in D:\ideaproject\to-wechat)
+2025-02-27 14:09:40 [INFO][com.ngmj.towechat.SpringbootApplication][logStartupProfileInfo][634]-> No active profile set, falling back to 1 default profile: "default"
+2025-02-27 14:09:41 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][291]-> Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-27 14:09:41 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][138]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-27 14:09:41 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][208]-> Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2025-02-27 14:09:41 [INFO][org.springframework.cloud.context.scope.GenericScope][setSerializationId][282]-> BeanFactory id=50c4b034-175c-3ed7-83a2-96d8a46fb31e
+2025-02-27 14:09:42 [INFO][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker][postProcessAfterInitialization][409]-> Bean 'com.ngmj.towechat.feign.WeChatFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-02-27 14:09:42 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 80 (http)
+2025-02-27 14:09:42 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-80"]
+2025-02-27 14:09:42 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-02-27 14:09:42 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/10.1.11]
+2025-02-27 14:09:42 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-02-27 14:09:42 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][291]-> Root WebApplicationContext: initialization completed in 2344 ms
+2025-02-27 14:09:43 [INFO][org.redisson.Version][logVersion][41]-> Redisson 3.21.0
+2025-02-27 14:09:43 [INFO][org.redisson.connection.pool.MasterPubSubConnectionPool][lambda$createConnection$0][158]-> 1 connections initialized for localhost/127.0.0.1:6379
+2025-02-27 14:09:44 [INFO][org.redisson.connection.pool.MasterConnectionPool][lambda$createConnection$0][158]-> 24 connections initialized for localhost/127.0.0.1:6379
+2025-02-27 14:09:44 [INFO][com.alibaba.druid.spring.boot3.autoconfigure.DruidDataSourceAutoConfigure][dataSource][64]-> Init DruidDataSource
+2025-02-27 14:09:44 [INFO][com.alibaba.druid.pool.DruidDataSource][init][1002]-> {dataSource-1} inited
+2025-02-27 14:09:45 [INFO][org.springframework.amqp.rabbit.connection.CachingConnectionFactory][connectAddresses][630]-> Attempting to connect to: [localhost:5673]
+2025-02-27 14:09:45 [INFO][org.springframework.amqp.rabbit.connection.CachingConnectionFactory][createBareConnection][581]-> Created new connection: rabbitConnectionFactory#477bea57:0/SimpleConnection@489b7559 [delegate=amqp://guest@127.0.0.1:5673/, localPort=58289]
+2025-02-27 14:09:45 [INFO][org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver][<init>][58]-> Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-02-27 14:09:46 [WARN][org.springframework.core.LocalVariableTableParameterNameDiscoverer][inspectClass][123]-> Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+2025-02-27 14:09:46 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-80"]
+2025-02-27 14:09:46 [WARN][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext][refresh][616]-> Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-02-27 14:09:46 [INFO][com.alibaba.druid.pool.DruidDataSource][close][2207]-> {dataSource-1} closing ...
+2025-02-27 14:09:46 [INFO][com.alibaba.druid.pool.DruidDataSource][close][2280]-> {dataSource-1} closed
+2025-02-27 14:09:46 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Pausing ProtocolHandler ["http-nio-80"]
+2025-02-27 14:09:46 [INFO][org.apache.catalina.core.StandardService][log][173]-> Stopping service [Tomcat]
+2025-02-27 14:09:46 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Stopping ProtocolHandler ["http-nio-80"]
+2025-02-27 14:09:46 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Destroying ProtocolHandler ["http-nio-80"]
+2025-02-27 14:09:46 [INFO][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger][logMessage][82]-> 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-27 14:09:46 [ERROR][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter][report][40]-> 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2025-02-27 14:11:33 [INFO][com.ngmj.towechat.SpringbootApplication][logStarting][51]-> Starting SpringbootApplication using Java 17.0.13 with PID 3768 (D:\ideaproject\to-wechat\target\classes started by Administrator in D:\ideaproject\to-wechat)
+2025-02-27 14:11:33 [INFO][com.ngmj.towechat.SpringbootApplication][logStartupProfileInfo][634]-> No active profile set, falling back to 1 default profile: "default"
+2025-02-27 14:11:34 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][291]-> Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-27 14:11:34 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][138]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-27 14:11:34 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][208]-> Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-02-27 14:11:34 [INFO][org.springframework.cloud.context.scope.GenericScope][setSerializationId][282]-> BeanFactory id=50c4b034-175c-3ed7-83a2-96d8a46fb31e
+2025-02-27 14:11:34 [INFO][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker][postProcessAfterInitialization][409]-> Bean 'com.ngmj.towechat.feign.WeChatFeign' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-02-27 14:11:35 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 80 (http)
+2025-02-27 14:11:35 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-80"]
+2025-02-27 14:11:35 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-02-27 14:11:35 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/10.1.11]
+2025-02-27 14:11:35 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-02-27 14:11:35 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][291]-> Root WebApplicationContext: initialization completed in 2011 ms
+2025-02-27 14:11:35 [INFO][org.redisson.Version][logVersion][41]-> Redisson 3.21.0
+2025-02-27 14:11:36 [INFO][org.redisson.connection.pool.MasterPubSubConnectionPool][lambda$createConnection$0][158]-> 1 connections initialized for localhost/127.0.0.1:6379
+2025-02-27 14:11:36 [INFO][org.redisson.connection.pool.MasterConnectionPool][lambda$createConnection$0][158]-> 24 connections initialized for localhost/127.0.0.1:6379
+2025-02-27 14:11:36 [INFO][com.alibaba.druid.spring.boot3.autoconfigure.DruidDataSourceAutoConfigure][dataSource][64]-> Init DruidDataSource
+2025-02-27 14:11:36 [INFO][com.alibaba.druid.pool.DruidDataSource][init][1002]-> {dataSource-1} inited
+2025-02-27 14:11:37 [INFO][org.springframework.amqp.rabbit.connection.CachingConnectionFactory][connectAddresses][630]-> Attempting to connect to: [localhost:5673]
+2025-02-27 14:11:37 [INFO][org.springframework.amqp.rabbit.connection.CachingConnectionFactory][createBareConnection][581]-> Created new connection: rabbitConnectionFactory#35f22eef:0/SimpleConnection@1aebe759 [delegate=amqp://guest@127.0.0.1:5673/, localPort=58692]
+2025-02-27 14:11:38 [INFO][org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver][<init>][58]-> Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-02-27 14:11:38 [WARN][org.springframework.core.LocalVariableTableParameterNameDiscoverer][inspectClass][123]-> Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+2025-02-27 14:11:38 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-80"]
+2025-02-27 14:11:38 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 80 (http) with context path ''
+2025-02-27 14:11:38 [INFO][com.ngmj.towechat.SpringbootApplication][logStarted][57]-> Started SpringbootApplication in 6.018 seconds (process running for 6.8)
+2025-02-27 14:11:38 [INFO][com.ngmj.towechat.Task.AccessTokenTask][getAccessToken][28]-> access_token: 89_ZvUMjaCqps495cbDU8xYK1oN3WdrX3K06TLcwsuRP57T_eGyHmEMdxHdDbxKEeIWz983K3otpAdo7BAoIJilWJjT30DOj48pR6JSH_4JfpgxVGPGGftqqQskCIACBAgAGALKJ
+2025-02-27 14:11:38 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-27 14:11:39 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][532]-> Initializing Servlet 'dispatcherServlet'
+2025-02-27 14:11:39 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][554]-> Completed initialization in 1 ms
+2025-02-27 14:14:55 [INFO][com.alibaba.druid.pool.DruidDataSource][close][2207]-> {dataSource-1} closing ...
+2025-02-27 14:14:55 [INFO][com.alibaba.druid.pool.DruidDataSource][close][2280]-> {dataSource-1} closed
