@@ -49,7 +49,7 @@ public class WeChatValidate {
             @RequestParam("echostr") String echostr) {
 
         // 1. 将token、timestamp、nonce按字典序排序
-        String[] arr = {appConfig.getToken(), timestamp, nonce};
+        String[] arr = {"niangumujing", timestamp, nonce};
         Arrays.sort(arr);
 
         // 2. SHA1加密
