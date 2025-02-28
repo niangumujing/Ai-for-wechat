@@ -145,8 +145,8 @@ toWechat:
 在上述文件结构的目录下运行命令:
 
 ```
-docker compose build
-docker compose up -d
+docker-compose build
+docker-compose up -d
 ```
 
 linux(centos , ubuntu)安装docker(自行网络上寻找教程,或者让AI教你 提示词: 如何在centos , ubuntu 上安装docker)
