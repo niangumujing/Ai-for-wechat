@@ -1,6 +1,5 @@
 package com.ngmj.towechat.controller;
 
-import com.alibaba.dashscope.common.Message;
 import com.ngmj.towechat.common.CommonUtils;
 import com.ngmj.towechat.common.enums.MessageType;
 import com.ngmj.towechat.common.enums.PlatformEnum;

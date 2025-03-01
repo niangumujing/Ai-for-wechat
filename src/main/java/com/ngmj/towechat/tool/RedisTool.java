@@ -223,6 +223,6 @@ public class RedisTool {
      */
     public void setMessageContext(String openId, List<Message> messageList){
         // 将消息列表转换为JSON字符串，并以特定的键存储到Redis中
-        stringRedisTemplate.opsForValue().set(RedisCommon.MESSAGE_CONTEXT + openId, JSONUtil.toJsonStr(messageList));
+        stringRedisTemplate.opsForValue().set(RedisCommon.MESSAGE_CONTEXT + openId, JSONUtil.toJsonStr(messageList), AI_WAIT_TIME, TimeUnit.SECONDS);
     }
 }
